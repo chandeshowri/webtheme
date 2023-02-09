@@ -1,0 +1,80 @@
+.abc {
+    background: blue;
+    color: white  !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    color: blue;
+   &:hover{
+    @extend .abc
+   }
+}
+
+.navbar-nav .nav-link.active
+{
+    @extend .abc
+}
+
+.box
+{
+    
+    background: gainsboro;
+    padding: 20px;
+    h2 
+    {
+        padding: 20px 0;
+    }
+   p 
+   {
+    padding-bottom: 20px;
+   }
+   &:hover
+   {
+    border: 1px solid gray;
+    background: white;
+   }
+}
+
+i
+{
+    font-size: 66px;
+}
+
+.team
+{
+    color: white; 
+  
+}
+
+.clint
+{
+&:hover
+{
+    background: aqua;
+}
+
+.footer
+{
+    h5 
+    {
+        font-size: 24px;
+          }
+          
+}
+
+
+.last
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right
+{
+    i 
+    {
+        font-size: 16px;
+    }
+}
